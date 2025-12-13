@@ -44,8 +44,9 @@ Tworzy lokalne repozytorium kontroli wersji. musimy przejść do tego katalogu w
 ### git remote add origin git@github.com:filutekartur/to-delete2.git
 Łączy origin ze zdalnym repo. W przypadku tworzenia nowego repo na kompie żeby móc potem wysyłąć commity do zdalnego repo to musimy stworzyć najpierw takie repo na githubie i wyciągnąć SSH.
 
-## git checkout master
-Przechodzi pomiedzy gałęziami
+## git checkout main
+Przechodzi pomiedzy gałęziami. --force wymusze przejście do innej gałęzi porzucając zmiany zapisane i również te które czekająw indexie.
+
 ### git checkout -b branch2
 Tworzy gałąź branch2 i do niej przechodzi. jeżeli mamy różnice w jednym pliku w na jednej gałęzi i na drugiej to przchodząc checkoutem plik w którym są te różnice np. README.md bedzie sie zmieniac.
 Oznacza to że każda gałąź to tak jakby osobny projekt
