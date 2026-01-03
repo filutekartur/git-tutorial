@@ -102,6 +102,7 @@ cofa zmiany w plikach do stanu z przedostatniego commita HEAD, co ciekawe index 
 przeglądarka commitów/gałęzi itd.
 ### git log --graph
 tekstowo/graficzny podlągad gałęzi i comitów można również dodać --oneline dla skróconego widoku
+git log main..feature pokaże wszystkie comity feature których nie ma w main czyli taki diff
 
 ## git config
 Konfiguracja opcji globalnych/repo. --list pokaże obecną konfigurację. Plik zapisuje się w c:\Users\x\.gitconfig
