@@ -30,6 +30,26 @@ pokazuje status repozytorium tj. ktore pliki zostały zmodyfikowane, a które zo
 
 ## git add .
 Rozpoczyna śledzenie plików. Można dodać pojedyncze pliki, całe katalogi lub . która dodaje całą zawartość
+### git add -p test.txt
+(--patch) Dodawanie części pliku do indexu zamiast całego pliku, pozwala również na edycję tego co zostanie dodane do indexu z konkretnego pliku.
+Patch dzieli plik na hunki (części) i można je potem ponownie podzielić komendą s 
+najmniejszy hunk jaki możemy uzyskać to: od obszaru który sie nie zmienia do obszaru który się nie zmienia tj:
+ 1linia
++2linia
+-3linia
+ 4linia
+to najmniejszy możliwy hunk którego nie da sie juz podzielić.
+Czyli: 2 linijke dodajemy,3 linijke usuwamy a linia 1 i 4 zostają; i one wyznaczają najmniejszy możliwy hunk. Bardziej tego już git nie podzieli
+Kolejną możliwością jest ręczna edycja hunka za pomocą komendy "e"
+Otworzy sie edytor, jeśli bedzie to VIM to klikamy "i" dzięki czemu bedziemy mogli edytować patch który zostanie dodany do indexu.
+@@ -1,3 +1,3 @@
+pierwsza część: oznacza że -1 od tej linijki zaczyna się stara wersja pliku i zawiera 3 linijki.
+druga część: nowa wersja pliku też zaczyna się od 1 i będzie zawierać 3 linijki. Dlatego że jedną linijke usuwamy (-) i jedną dodajemy.
+Należy tego pilnować i w razie czego poprawić np. w przypadku edycji takiego hunka ręcznie.
+linijki z - zamiast usuwać możemy zostawić usuwając "-" i zastępując go spacją, wtedy ta linijka nie zostanie usunięta i taki stan dodamy do stage
+linijki z + możemy usunąć całkiem i wtedy ta wcześniej dodana linia nie zostanie dodana do indexu.
+po zakończeniu edycji klikamy esc potem :wq i enter
+W trybie edycji możemy również preparować linie ważne żeby u góry zgadzało się info @@ -1,3 +1,3 @@
 
 ## git commit -m "Title" -m "Description"
 zapisuje zmiany w śledzonych plikach (add) zmiany zostaną zapisane w lokalnym Git 
