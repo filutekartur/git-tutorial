@@ -30,6 +30,8 @@ pokazuje status repozytorium tj. ktore pliki zostały zmodyfikowane, a które zo
 
 ## git add .
 Rozpoczyna śledzenie plików. Można dodać pojedyncze pliki, całe katalogi lub . która dodaje całą zawartość
+### git add -N test.txt
+Dodaje do indexu tylko info że taki plik istnieje, bez załączania kontentu pliku.
 ### git add -p test.txt
 (--patch) Dodawanie części pliku do indexu zamiast całego pliku, pozwala również na edycję tego co zostanie dodane do indexu z konkretnego pliku.
 Patch dzieli plik na hunki (części) i można je potem ponownie podzielić komendą s 
