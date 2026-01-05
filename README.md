@@ -1,7 +1,6 @@
-# This is header
-This is not header
+# Git tutorial
 
-Git to kontrola wersji lokalnie na komputerze
+Git to okalna kontrola wersji na komputerze
 Github to zdalny system kontroli wersji. Możemy posiadać wiele repo
 Repozytoria/Projekty możemy pushować do githuba lub pullować/clonować do lokalnego gita
 
