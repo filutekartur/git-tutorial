@@ -91,12 +91,12 @@ files - tak, przywraca pliki z konkretnego commita
 
 ## git restore .
 przywraca stan w katalogu roboczym lub indexie, nie usuwa comita. Po użyciu restore nadal jesteśmy na ostatnim comicie tj. HEAD
-### git restore
-przywraca pliki do stanu z indexu
+### git restore test.txt
+przywraca pliki do ostatniego stan tj. indexu jeśli został wprowadzony, jeśli go nie ma cofnie zmiany w plikach do ostatniego comita
 ### git restore --staged .
-przywraca index do stannu z ostatniego comita (head)
+przywraca index do stannu z ostatniego comita (head), pliki zostają bez zmian
 ### git restore --staged --worktree .
-przywraca pliki i index do stanu z ostatniego comita (head)
+przywraca pliki i index do stanu z ostatniego comita (head). Samo worktree cofa do ostatniego stanu tj. indexu, a jeśli go nie ma to do last commita
 ### git restore --source HEAD~1 .
 cofa zmiany w plikach do stanu z przedostatniego commita HEAD, co ciekawe index pozostaje nie tknięty więc można spowrotem do niego wrócić
 
