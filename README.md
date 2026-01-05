@@ -110,3 +110,9 @@ Konfiguracja opcji globalnych/repo. --list pokaże obecną konfigurację. Plik z
 Globalna konfiguracja nazwy uzytkownika którym bedą podpisywane wszystkie comity
 ### git config --global user.email "email@address.com"
 Globalna konfiguracja maila którym bedą podpisywane wszystkie comity
+
+## Vim
+Domyślny edytor tekstu dla Gita. 
+i komenda włączająca edycję pliku
+esc wychodzi z edycji tekstu i przechodzi do lini komend
+:wq - write (zapis) i wyjście z pliku
