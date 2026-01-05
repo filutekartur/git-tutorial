@@ -54,7 +54,7 @@ Oznacza to że każda gałąź to tak jakby osobny projekt
 pokazuje wszystkie dostępne gałęzie
 
 ## git diff test.txt
-pokazuje różnica pomiędzy stanem z ostatniego comita a tym co zmieniliśmy w pliku ale nie dodaliśmy do indexu. Jeśli dodamy do indexu to git diff nie pokaże nic
+pokazuje różnice pomiędzy stanem z ostatniego comita a tym co zmieniliśmy w pliku ale nie dodaliśmy do indexu. Jeśli dodamy do indexu to git diff nie pokaże nic
 ### git diff branch2
 Pokazuje różnice pomiędzy ostatnim comitem na obecnej gałęzi i ostatnim comitem gałęzi branch2. Można dopisać drugą nazwę gałęzi żeby sprawdzić dwie konkretne gałęzie a nie tą na której jesteśmy
 
