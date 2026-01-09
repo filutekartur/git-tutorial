@@ -51,6 +51,8 @@ linijki z - zamiast usuwać możemy zostawić usuwając "-" i zastępując go sp
 linijki z + możemy usunąć całkiem i wtedy ta wcześniej dodana linia nie zostanie dodana do indexu.\
 po zakończeniu edycji klikamy esc potem :wq i enter\
 W trybie edycji możemy również preparować linie ważne żeby u góry zgadzało się info @@ -1,3 +1,3 @@\
+Jeśli zrobimy jakiś błąd to z edycji bez zapisywania wychodzimy :cq i potem wybieramy n
+W trybie split hunk wybierając y zatwierdzamy konkretny hunk, n nie dodajemy zmian z tego hunka, q wychodzimy z zatwierdzania hunków
 
 ## git commit -m "Title" -m "Description"
 zapisuje zmiany w śledzonych plikach (add) zmiany zostaną zapisane w lokalnym Git 
